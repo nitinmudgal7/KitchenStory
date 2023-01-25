@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/addtocart.css">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <title>Confirmation Kitchen Story</title>
+        <script src="https://randojs.com/1.0.0.js"></script>
+        <script>
+            function showRandomNumber(){
+                document.getElementById("myNumber").innerHTML = rando(3000998, 5679998);
+            }
+        </script>
+    </head>
+    <body bgcolor= "#FAD7A0" onload="showRandomNumber(); ">
+        <div class="header">
+            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <p class="logo">Kitchen Story</p>
+        
+        </div>
+
+        Thank You for placing order with us !!</br>  
+        Order will be delivered in next 40 mins.</br>
+        You will soon receive an email with delivery person contact. </br></br>
+         <h1>Order ID:</h1>
+        <h1 id="myNumber"></id> </h1>
+    </br>
+</br>
+        <button type="submit" onclick= "location.href = 'login.html';">Signout</button>
+    </br>
+        <button type="submit" onclick= "location.href = 'index.html';">Order More</button>
+        <script src="js/addtocart.js"></script>
+    </body>
+</html>

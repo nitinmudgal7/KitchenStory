@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    header {
+background-color:#F0A07C;
+}    </style> 
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Kitchen Story</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+    
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="CSS/style2.css" />
+  </head>
+  <header>
+    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+    <br>
+    KITCHEN STORY <br>
+</header>
+  <body bgcolor= "#FAD7A0">
+    <br>
+    <h1 pos = "center">Search Kitchen Story Items</h1>
+    <br>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('NorthIndian')">
+          NorthIndian
+        </button>
+        <button class="button-value" onclick="filterProduct('SouthIndian')">
+          SouthIndian
+        </button>
+        <button class="button-value" onclick="filterProduct('Contemporary')">
+          Contemporary
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="js/script2.js"></script>
+  </body>
+</html>

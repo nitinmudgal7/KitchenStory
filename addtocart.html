@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/addtocart.css">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <title>Kitchen Story Cart</title>
+        <!--Pass cart value to next page-->
+        <script>
+            function output()
+            {
+                var total = document.getElementById("total").value;
+                window.localStorage.setItem("total",total);
+                
+            }
+        </script>
+        <!--Pass cart value to next page-->
+    </head>
+    <body bgcolor= "#FAD7A0">
+        <div class="header">
+            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <p class="logo">Kitchen Story</p>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        </div>
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">₹ 0.00</h2>
+                </div>
+
+                <!--Checkout Start-->
+                <button type="submit" onclick= "location.href = 'checkout.html';">Checkout</button>
+                <!--Checkout End-->
+            </div>
+        </div>
+        <script src="js/addtocart.js"></script>
+    </body>
+</html>

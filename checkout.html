@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/addtocart.css">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <title>Kitchen Story Checkout</title>
+        <!--Pass cart value to next page-->
+        <script>
+            function show()
+            {
+                var total = window.localStorage.getItem('total');
+                document.getElementById('total').innerHTML=total;
+                const  grtotal = Number(total)+80;
+                document.getElementById('grtotal').innerHTML=grtotal;
+            }
+        </script>
+        <!--Pass cart value to next page-->
+    </head>
+    <body bgcolor= "#FAD7A0" onload = "show();">
+        <div class="header">
+            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <p class="logo">Kitchen Story</p>
+        
+        </div>
+        Food Price:<h1 id="total"></id> </h1>
+        <br>
+        Delivery Fees:- &nbsp;&nbsp;&nbsp;&nbsp;₹ 50.00
+        <br>
+        Govt Tax:- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹ 30.00
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grand Total:<h1 id="grtotal"></id> </h1>
+        <br>
+        <br>
+
+        <form>
+            <textarea rows="5" cols="33">
+            Address:   
+            </textarea>
+          </form>
+          <br>
+          <br>
+        <button type="submit" onclick= "location.href = 'Done.html';">Place Order</button>
+    </body>
+</html>
